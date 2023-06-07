@@ -1,0 +1,60 @@
+@use "../../styles/" as *;
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url("https://firebasestorage.googleapis.com/v0/b/my-ecommerce-app-770f8.appspot.com/o/accessories-collection.webp?alt=media&token=e6d29a2d-d9af-42cd-865d-7b49927975b1")
+            center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+        width: 25%;
+        padding: 20px;
+        background-color: white;
+        @include mobile {
+            width: 75%;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                flex: 1;
+                min-width: 40%;
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            button {
+                width: 40%;
+                border: none;
+                padding: 15px 20px;
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                margin-bottom: 10px;
+                &:disabled {
+                    color: green;
+                    cursor: not-allowed;
+                }
+            }
+            a {
+                margin: 5px 0px;
+                font-size: 12px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            span {
+                color: red;
+            }
+        }
+    }
+}

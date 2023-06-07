@@ -1,0 +1,41 @@
+@use "../../styles/" as *;
+
+$guide-icon-font: 60px;
+.guide {
+    &__title {
+        color: $light-1;
+    }
+    &__item {
+        background: $dark-1;
+        border-radius: $rounded;
+        padding: $mg-5;
+        margin-bottom: $mg-4;
+
+        span svg {
+            color: $light-1;
+            padding: $mg-4;
+            font-size: $guide-icon-font;
+            background: $primary-dark;
+            border-radius: $rounded;
+        }
+        &--content {
+            margin-top: $mg-5 !important;
+            h5 a {
+                text-decoration: none;
+                color: $light-1;
+            }
+            p {
+                margin-bottom: $mg-0;
+            }
+            @include tablet {
+                h5 a {
+                    font-size: $fs-md;
+                }
+                p {
+                    font-size: $fs-sm;
+                    line-height: $mg-6;
+                }
+            }
+        }
+    }
+}

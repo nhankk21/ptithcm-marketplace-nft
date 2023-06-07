@@ -1,0 +1,9 @@
+@use "../../styles/" as *;
+
+.collection-card {
+    border-radius: $rounded;
+    &--content {
+        padding: $mg-4;
+        padding-bottom: $mg-4;
+    }
+}

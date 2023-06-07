@@ -1,0 +1,33 @@
+@use "../../styles/" as *;
+
+.seller-section {
+    &__title h3 {
+        color: $light-1;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: $mg-3;
+        margin-bottom: $mg-3;
+
+        &--img {
+            width: $space-80;
+            height: $space-80;
+            img {
+                width: $w-full;
+                display: block;
+            }
+        }
+
+        &--content {
+            h6 {
+                font-size: $fs-md;
+                color: $light-1;
+                @include tablet {
+                    font-size: $fs-sm !important;
+                }
+            }
+        }
+    }
+}

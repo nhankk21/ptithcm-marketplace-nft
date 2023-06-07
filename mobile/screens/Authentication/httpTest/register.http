@@ -1,0 +1,22 @@
+
+POST https://be-node.onrender.com/wallet/create HTTP/1.1
+
+{
+  "password": "Thuan12312"
+}
+
+# RESPONSE
+# {"status":
+#   "OK",
+#   "message":
+#   "Create new wallet successfully!",
+#   "data": {
+#     "address": "0x5fd1b4c544b65fab4e7320e666d08ce0bce775c8",
+#     "private_key": "ketchup polar fun shell car feature confirm skull huge upper squirrel conduct",
+#     "balance": 0,
+#     "created": 1680014313531,
+#     "updated": 1680014313531,
+#     "_id": "6422fbe972804c66c534ac72"
+#   }
+# }
+

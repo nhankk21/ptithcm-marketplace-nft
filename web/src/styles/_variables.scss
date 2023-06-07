@@ -1,0 +1,127 @@
+// Palette
+$prim-index: 259;
+$sec-index: 298;
+// common
+$white: #ffffff;
+$black: #000000;
+
+// primary
+$primary: hsl($prim-index, 79%, 46%);
+$primary-light: hsl($prim-index, 90%, 61%);
+$primary-dark: hsl($prim-index, 80%, 42%);
+
+// secondary
+$secondary: hsl($sec-index, 64%, 42%);
+$secondary-light: hsl($sec-index, 46%, 64%);
+$secondary-dark: hsl($sec-index, 68%, 38%);
+
+// status
+$error: #d32f2f;
+$warning: #ed6c02;
+$info: $primary-light;
+$success: #2e7d32;
+$disabled: #cccccc;
+
+// neutro
+$neutro-error: #e57373;
+$neutro-success: #81c784;
+$neutro-warning: #fff176;
+$neutro-info: #cfe8fc;
+$neutro-disabled: #90a4ae;
+
+// text color
+$light-1: #f8f8f8;
+$light-2: #f2f2f2;
+$light-3: #ededed;
+$light-4: #dadada;
+$dark-1: #343444;
+$dark-2: #555555;
+$dark-3: #777777;
+$dark-4: #999999;
+
+// Font
+// font-family
+$font_family: "Montserrat", sans-serif;
+// font-weight
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;
+
+// font-size
+$fs-xs: 12px;
+$fs-sm: 14px;
+$fs-md: 16px;
+$fs-lg: 20px;
+$fs-xl: 24px;
+$fs-xxl: 28px;
+$fs-max: 32px;
+
+// font-family
+$fm-default: "Roboto", "Helvetica", "Arial", "sans-serif";
+
+// Box model
+// spacing
+$mg-0: 0;
+$mg-1: 4px;
+$mg-2: 8px;
+$mg-3: 12px;
+$mg-4: 16px;
+$mg-5: 20px;
+$mg-6: 24px;
+$mg-7: 28px;
+$mg-8: 32px;
+$mg-9: 36px;
+
+$space-40: 40px;
+$space-48: 48px;
+$space-56: 56px;
+$space-64: 64px;
+$space-80: 80px;
+$space-96: 96px;
+
+$space-100: 100px;
+$space-150: 150px;
+$space-200: 200px;
+$space-250: 250px;
+$space-300: 300px;
+
+$w-100vw: 100vw;
+$h-100vh: 100vh;
+$w-full: 100%;
+$h-full: 100%;
+
+// border radius
+$shaped: 4px;
+$rounded: 12px;
+$circle: 50%;
+
+// z-index
+$z-1: 1;
+$z-2: 2;
+$z-5: 5;
+$z-10: 10;
+$z-20: 20;
+$z-50: 50;
+$z-100: 100;
+$z-1000: 1000;
+
+// background
+$background-gradient: linear-gradient(
+    -45deg,
+    $secondary-light,
+    $primary-dark,
+    $secondary-light,
+    $primary-dark
+);
+
+// box shadow
+@function shadowing($color, $blur) {
+    @return 0.3rem 0.3rem 0.6rem $color, -0.2rem -0.2rem 0.5rem $blur;
+}
+
+@function innerShadowing($color, $blur) {
+    @return inset 0.2rem 0.2rem 0.5rem $color,
+        inset -0.2rem -0.2rem 0.5rem $blur;
+}

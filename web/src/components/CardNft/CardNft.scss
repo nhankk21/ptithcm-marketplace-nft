@@ -1,0 +1,124 @@
+@use "../../styles/" as *;
+
+.nft-card {
+    width: $w-full;
+    padding: $mg-5;
+    background: $dark-1;
+    border-radius: $mg-3;
+    &__img {
+        display: block;
+        width: $w-full;
+        margin-bottom: $mg-4;
+        img {
+            display: block;
+            width: $w-full;
+            border-radius: $mg-3;
+        }
+    }
+
+    &__title {
+        margin-bottom: $mg-4;
+
+        a {
+            color: $white;
+            font-size: $fs-md;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-dark;
+            }
+        }
+
+        @include tablet {
+            font-size: $fs-sm !important;
+        }
+    }
+
+    &__info {
+        display: flex;
+        gap: $mg-1;
+        &--creator {
+            width: $space-40;
+            height: $space-40;
+
+            img {
+                display: block;
+                width: $w-full;
+            }
+        }
+
+        &--detail {
+            width: $w-full;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h6 {
+                font-size: $fs-xs;
+                color: $light-3;
+                margin-bottom: $mg-0;
+                font-weight: $fw-300;
+            }
+            p {
+                font-size: $fs-sm;
+                color: $light-3;
+                margin-bottom: $mg-0;
+                font-weight: $fw-500;
+            }
+
+            @include tablet {
+                h6 {
+                    font-size: $fs-xs !important;
+                }
+                p {
+                    font-size: $fs-xs !important;
+                }
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: $mg-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--btn {
+            display: flex;
+            align-items: center;
+            gap: $mg-1;
+            padding: $mg-1 $mg-5;
+            font-size: $fs-md;
+            text-transform: capitalize;
+            border: 1px solid $primary-dark;
+            outline: none;
+            color: $light-3;
+            border-radius: $space-48;
+            transition: 0.3s;
+            background: $primary-dark;
+            &:hover {
+                background: $light-3;
+                color: $primary-dark;
+            }
+
+            @include tablet {
+                padding: $mg-1 $mg-5 !important;
+                font-size: $fs-xs !important;
+            }
+        }
+
+        &--link {
+            a {
+                text-decoration: none;
+                color: $light-3;
+                font-size: $fs-sm;
+                &:hover {
+                    color: $light-1;
+                }
+
+                @include tablet {
+                    font-size: $fs-xs !important;
+                }
+            }
+        }
+    }
+}

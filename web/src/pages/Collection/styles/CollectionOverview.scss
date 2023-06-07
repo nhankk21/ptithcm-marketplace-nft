@@ -1,0 +1,33 @@
+@use "../../../styles/" as *;
+
+$img-max-width: 168px;
+$description-max-width: 886px;
+
+.collection__img {
+    div {
+        max-width: $img-max-width;
+        border-radius: $rounded;
+        img {
+            width: $w-full;
+            padding: $mg-1;
+            background-color: $white;
+            border-radius: $rounded;
+        }
+    }
+}
+.collection__info {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    &--name {
+        font-size: $fs-max;
+    }
+    &--description {
+        margin-top: $mg-5;
+        max-width: $description-max-width;
+    }
+}
+
+.collection__index {
+    margin-top: $mg-8;
+}

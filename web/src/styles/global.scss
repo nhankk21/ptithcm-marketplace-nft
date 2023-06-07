@@ -1,0 +1,71 @@
+/* Mixin */
+@use "./index" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font_family;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+body {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    background: #14141f !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.772);
+    line-height: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: unset;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section,
+footer {
+    padding: 60px 0px;
+}
+
+/* =========== custom scroll-bar ========= */
+
+::-webkit-scrollbar {
+    width: $mg-3;
+    background: $dark-1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    background: linear-gradient(
+        -45deg,
+        $secondary-light,
+        $primary-dark,
+        $secondary-light,
+        $primary-dark
+    );
+}
+
+/* =========== custom UI Framework ========= */
+.MuiContainer-root {
+    max-width: 1320px;
+}

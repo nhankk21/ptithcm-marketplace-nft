@@ -1,0 +1,56 @@
+@use "../../styles/" as *;
+$bg-gradient-radius: -45deg;
+$icon-font: 40px;
+$header-shrink-box-shadow: 2px 2px 4px -2px $secondary-light;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-1000;
+
+    &__logo {
+        // &--icon,
+        // &--name {
+        background: linear-gradient(
+            $bg-gradient-radius,
+            $secondary-light,
+            $primary-dark,
+            $secondary-light,
+            $primary-dark
+        );
+        font-size: $fs-xl;
+        background-size: $w-full $h-full;
+        background-clip: text;
+        -webkit-text-stroke: $mg-1 transparent;
+        -webkit-text-fill-color: $dark-1;
+        margin-bottom: $mg-0;
+        // }
+    }
+
+    &__nav {
+        // &--list {
+        //     display: flex;
+        //     align-items: center;
+        //     list-style-type: none;
+        //     column-gap: $mg-8;
+        //     margin-bottom: $mg-0;
+        // }
+
+        // &--item {
+        //     a {
+        //         text-decoration: none;
+        //         color: $white;
+        //         font-size: $fs-xl;
+        //         font-weight: $fw-300;
+        //         &:hover {
+        //             color: $white;
+        //         }
+        //     }
+
+        // }
+        .active {
+            color: $secondary-light !important;
+        }
+    }
+}

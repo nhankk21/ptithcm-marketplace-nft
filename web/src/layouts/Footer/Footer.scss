@@ -1,0 +1,85 @@
+@use "../../styles/" as *;
+
+$bg-gradient-radius: -45deg;
+.footer {
+    padding-bottom: $mg-8;
+    background: #000;
+
+    h5 {
+        font-size: 1.6rem;
+        color: $white;
+    }
+
+    .logo {
+        h2 {
+            background: linear-gradient(
+                $bg-gradient-radius,
+                $secondary-light,
+                $primary-dark,
+                $secondary-light,
+                $primary-dark
+            );
+            background-size: $w-full $h-full;
+            background-clip: text;
+            -webkit-text-stroke: $mg-1 transparent;
+            -webkit-text-fill-color: $dark-1;
+            margin-bottom: $mg-0;
+        }
+    }
+
+    .list__group {
+        .list__item {
+            background: transparent !important;
+            padding-left: 0 !important;
+            border: none !important;
+            a {
+                text-decoration: none;
+                color: $light-4;
+                font-weight: $fw-300;
+                font-size: 1.4rem;
+
+                &:hover {
+                    color: $light-4;
+                }
+            }
+        }
+    }
+    .newsletter {
+        width: 100%;
+        border-radius: 50px;
+        color: $white;
+        padding: 7px 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+        font-size: $fs-xs;
+        background: $dark-1;
+        ::placeholder {
+            color: $light-3;
+        }
+    }
+
+    .social__links {
+        display: flex;
+        gap: $mg-2;
+        align-items: center;
+
+        span a svg {
+            text-decoration: none;
+            color: $light-4;
+            font-size: $fs-md;
+            font-weight: $fw-400;
+            transition: 0.3s;
+
+            &:hover {
+                color: $secondary-light;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: $fs-md;
+        color: $dark-4;
+    }
+}

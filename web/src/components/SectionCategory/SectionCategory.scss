@@ -1,0 +1,23 @@
+@use "../../styles/" as *;
+
+.top-volume {
+    margin-top: $mg-4;
+    width: $w-100vw;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            color: $white;
+        }
+        span {
+            a {
+                text-decoration: none;
+                color: $light-1;
+                border-bottom: 1px solid $primary-dark;
+            }
+        }
+    }
+}

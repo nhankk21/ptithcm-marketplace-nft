@@ -1,0 +1,105 @@
+@use "../../../../styles/" as *;
+
+$hero-img-width: 500px;
+
+.hero__section {
+    margin-top: $space-100;
+    @include tablet {
+        margin-top: $space-80;
+    }
+
+    .hero__content {
+        max-width: $hero-img-width;
+        h2 {
+            line-height: $space-56;
+            font-size: $fs-max;
+            color: $light-3;
+
+            span {
+                padding: $mg-1;
+                background: $background-gradient;
+                background-size: $w-full $h-full;
+                background-clip: text;
+                -webkit-text-stroke: $mg-1 transparent;
+                -webkit-text-fill-color: #14141f;
+                margin-left: $mg-2 !important;
+                display: inline-block;
+            }
+        }
+
+        @include tablet {
+            h2 {
+                font-size: $fs-xl;
+                line-height: $space-40;
+            }
+            p {
+                font-size: $fs-sm;
+                line-height: $mg-6;
+            }
+        }
+
+        .hero__btns {
+            display: flex;
+            align-items: center;
+            gap: $mg-2;
+            margin-top: $space-40;
+
+            .explore__btn,
+            .create__btn {
+                display: flex;
+                align-items: center;
+                gap: $mg-1;
+                border: none;
+                outline: none;
+                padding: $mg-2 $mg-6 !important;
+                border-radius: $space-48 !important;
+                border: 1px solid $primary-dark !important;
+                font-size: $fs-sm;
+                text-transform: capitalize;
+                background: transparent;
+
+                svg {
+                    color: $white;
+                    font-size: $fs-md;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+                &:hover {
+                    a,
+                    svg {
+                        color: $secondary-light;
+                    }
+                }
+
+                @include tablet {
+                    padding: $mg-1 $mg-6 !important;
+                    a {
+                        font-size: $fs-xs;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero__img {
+        width: $hero-img-width;
+        margin-left: auto;
+        @include tablet {
+            width: $space-300;
+        }
+        @include mobile {
+            width: $w-full;
+            margin: auto;
+            margin-top: $space-48;
+        }
+
+        img {
+            display: block;
+            width: $w-full;
+            border-radius: $rounded;
+        }
+    }
+}

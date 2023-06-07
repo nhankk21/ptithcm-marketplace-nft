@@ -1,0 +1,9 @@
+# $baseURL =  https://be-node.onrender.com
+
+POST https://be-node.onrender.com/wallet/login HTTP/1.1
+content-type: application/json
+
+{
+  "address": "0x9bc6e32a97852c0d262d43704cfdbdfff72020eb",
+  "password": "Thuan12312w"
+}

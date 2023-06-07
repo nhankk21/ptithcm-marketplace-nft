@@ -1,0 +1,48 @@
+@use "../../styles/" as *;
+
+.profile {
+    margin: $mg-4 $mg-0;
+
+    &-images {
+        padding-bottom: $mg-0;
+        width: $w-full;
+        &__background {
+            img {
+                height: $space-300;
+                width: $w-100vw;
+                top: $space-64;
+                left: $mg-0;
+                position: absolute;
+            }
+        }
+
+        &__avatar {
+            margin-top: $space-100;
+            img {
+                width: $space-150;
+                height: $space-150;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &-info {
+        padding: $mg-0;
+        margin-top: $mg-4;
+
+        &__address {
+            display: inline-block;
+            padding: 0 $mg-1;
+            border-radius: $rounded;
+        }
+
+        &__detail {
+            &--index {
+                font-size: 1.6rem;
+            }
+            &--script {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
